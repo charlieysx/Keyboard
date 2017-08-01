@@ -1,7 +1,9 @@
-package com.codebear.keyboard;
+package com.codebear.demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.codebear.keyboard.R;
 
 public class MainActivity extends AppCompatActivity {
 
