@@ -1,10 +1,31 @@
 # Keyboard
+[![](https://jitpack.io/v/smileysx/Keyboard.svg)](https://jitpack.io/#smileysx/Keyboard)
+
 Listening to the soft keyboard open or close
 
 ## gif
 
 ![gif](/raw/keyboard1.gif)
 ![gif](/raw/keyboard2.gif)
+
+## Gradle
+
+* add jitpack to your project's build.gradle:
+```xml
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+```
+
+* add the compile statement to your module's build.gradle:
+```xml
+dependencies {
+    compile 'com.github.smileysx:Keyboard:1.0.0'
+}
+```
 
 ## Usage
 
