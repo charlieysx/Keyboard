@@ -1,16 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
-
-buildscript {
-    repositories {
-        jcenter {
-            url "http://jcenter.bintray.com/"
-        }
-    }
-    dependencies {
-        classpath 'com.novoda:bintray-release:0.3.4'
-    }
-}
+apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 25
@@ -40,13 +29,4 @@ dependencies {
     })
     provided 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
-}
-
-publish {
-    userOrg = 'codebearxx' // 用户所在组织
-    groupId = 'com.codebear.keyboard' // 包名
-    artifactId = 'keyboard-listener' // library的名字
-    publishVersion = '1.0.0' // 版本
-    desc = 'Listening to the soft keyboard open or close' // library描述
-    website = 'https://github.com/smileysx/Keyboard'
 }
